@@ -10,7 +10,7 @@ ReactDOM.render(
         <nav class="flex items-center justify-between rounded-lg h-16 bg-gray-600 mt-2 mx-auto w-4/5">
             <h1 class="text-2xl font-semibold text-white mx-2">Monumentos de Oviedo</h1>
             <button class="bg-midnightblue hover:bg-blue-700 text-white font-bold py-2 px-4 h-12 rounded-lg mx-2">
-                ↓ ≡
+                ≡
             </button>
         </nav>
             <div class="w-4/5 rounded-lg my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
