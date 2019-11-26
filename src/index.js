@@ -75,6 +75,10 @@ ReactDOM.render(
 
                 </div>
             </div>
+
+
+
+            <footer class="flex-center mb-4 mx-auto align-center"><p>Creado por: <a class="m-0 underline" target="_blank" href="https://jorgeorejas.com">Jorge Orejas</a></p></footer>
     </div>
 , document.getElementById('root'));
 
