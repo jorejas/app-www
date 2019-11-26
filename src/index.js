@@ -6,7 +6,7 @@ import './styles/tailwind.css';
 import puerto from './img/puerto.jpg';
 
 ReactDOM.render(
-    <div class="flex flex-col items-center font-sans font-light">
+    <div class="flex flex-col bg-gray-100 items-center font-sans font-light">
         <nav class="flex items-center w-4/5 my-4 justify-between rounded-lg flex-wrap bg-oviedoblue p-6">
             <div class="flex items-center flex-shrink-0 text-white mr-6">
                 <span class="font-semibold text-xl tracking-tight">Historia de Oviedo</span>
@@ -22,15 +22,15 @@ ReactDOM.render(
                     Guerra Civil
                 </a>
                 <a href="#Prerromanico" class="block mt-4 lg:inline-block lg:mt-0 text-white font-normal hover:text-white mr-4">
-                    Prerromanico
+                    Prerrománico
                 </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white font-normal hover:text-white">
-                    Blog
+                <a href="#about" class="block mt-4 lg:inline-block lg:mt-0 text-white font-normal hover:text-white">
+                    About
                 </a>
                 </div>
             </div>
         </nav>
-            <div class="w-4/5 rounded-lg my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
+            <div class="w-4/5 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
                 <img class="w-full" src={puerto} alt="Sunset in the mountains"></img>
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">Mar</div>
@@ -45,7 +45,7 @@ ReactDOM.render(
 
                 </div>
             </div>
-            <div class="w-4/5 rounded-lg my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
+            <div class="w-4/5 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
                 <img class="w-full" src={puerto} alt="Sunset in the mountains"></img>
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">Puerto</div>
@@ -60,7 +60,7 @@ ReactDOM.render(
 
                 </div>
             </div>
-            <div class="w-4/5 rounded-lg my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
+            <div class="w-4/5 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
                 <img class="w-full" src={puerto} alt="Sunset in the mountains"></img>
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">Faro</div>
@@ -74,7 +74,7 @@ ReactDOM.render(
                     <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 cursor-pointer my-1 mx-1">Another Example</span>
 
                 </div>
-            </div> 
+            </div>
     </div>
 , document.getElementById('root'));
 
