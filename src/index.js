@@ -44,10 +44,13 @@ ReactDOM.render(
                         </div>
                         <div id="main-nav" class="w-full leading-none flex-grow sm:flex items-center sm:w-auto hidden transition-100 transition-all">
                             <div class="text-sm sm:flex-grow">
-                                <a href="#" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-white hover:text-grey-300 mr-4">
+                                <a href="#religion" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-white hover:text-grey-300 mr-4">
+                                   Religioso
+                                </a>
+                                <a href="#civil" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-white hover:text-grey-300 mr-4">
                                    Guerra Civil
                                 </a>
-                                <a href="#" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-white hover:text-grey-300 mr-4">
+                                <a href="#pre" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-white hover:text-grey-300 mr-4">
                                    Prerrománico
                                 </a>
                                 <a href="#about" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-white hover:text-grey-300 mr-4">
@@ -58,10 +61,10 @@ ReactDOM.render(
                     </nav>
                 </div>
             </div>
-            <div class="w-4/5 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
+            <div id="religion" class="w-4/5 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
                 <img class="w-full" src={puerto} alt="Sunset in the mountains"></img>
                 <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Mar</div>
+                    <div class="font-bold text-xl mb-2">Religioso</div>
                     <p class="text-gray-700 text-base">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                     </p>
@@ -73,10 +76,10 @@ ReactDOM.render(
 
                 </div>
             </div>
-            <div class="w-4/5 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
+            <div id="civil" class="w-4/5 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
                 <img class="w-full" src={puerto} alt="Sunset in the mountains"></img>
                 <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Puerto</div>
+                    <div class="font-bold text-xl mb-2">Guerra Civil</div>
                     <p class="text-gray-700 text-base">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                     </p>
@@ -88,10 +91,10 @@ ReactDOM.render(
 
                 </div>
             </div>
-            <div class="w-4/5 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
+            <div id="pre" class="w-4/5 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
                 <img class="w-full" src={puerto} alt="Sunset in the mountains"></img>
                 <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Faro</div>
+                    <div class="font-bold text-xl mb-2">Prerrománico</div>
                     <p class="text-gray-700 text-base">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                     </p>
