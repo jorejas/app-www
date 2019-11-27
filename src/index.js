@@ -30,19 +30,19 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 ReactDOM.render(
-    <div class="flex flex-col bg-gray-100 items-center font-sans font-light">
-            <div class="border-b bg-oviedoblue w-4/5 my-4 py-6 px-6 rounded-lg px-2">
-                <div class="container mx-auto">
-                    <nav class="flex items-center justify-between flex-wrap">
-                        <div class="flex items-center flex-no-shrink text-white mr-6">
-                            <span class="font-semibold text-white text-xl tracking-tight">Historia de Oviedo</span>
+    <div class="flex flex-col bg-gray-100 items-center font-sans font-light transition-all">
+            <div class="border-b bg-oviedoblue w-4/5 my-4 py-6 px-6 rounded-lg px-2 transition-all">
+                <div class="container mx-auto transition-all">
+                    <nav class="flex items-center justify-between flex-wrap transition-all">
+                        <div class="flex items-center flex-no-shrink text-white mr-6 transition-all">
+                            <span class="font-semibold text-white text-xl tracking-tight transition-all">Historia de Oviedo</span>
                         </div>
-                        <div class="block sm:hidden">
-                            <button class="navbar-burger flex items-center px-3 py-2 border rounded-lg text-white border-white hover:text-white hover:border-white">
+                        <div class="block sm:hidden transition-all">
+                            <button class="navbar-burger flex items-center px-3 py-2 border rounded-lg text-white border-white hover:text-white hover:border-white transition-all">
                                 <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                             </button>
                         </div>
-                        <div id="main-nav" class="w-full leading-none flex-grow sm:flex items-center sm:w-auto hidden transition-100">
+                        <div id="main-nav" class="w-full leading-none flex-grow sm:flex items-center sm:w-auto hidden transition-100 transition-all">
                             <div class="text-sm sm:flex-grow">
                                 <a href="#" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-white hover:text-grey-300 mr-4">
                                    Guerra Civil
@@ -103,8 +103,6 @@ ReactDOM.render(
 
                 </div>
             </div>
-
-
             <footer id="about" class="flex-center mb-4 mx-auto align-center"><p>Creado por: <a class="m-0 underline" target="_blank" href="https://jorgeorejas.com">Jorge Orejas</a></p></footer>
     </div>
 , document.getElementById('root'));
