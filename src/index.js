@@ -70,7 +70,7 @@ ReactDOM.render(
                     </p>
                 </div>
                 <div class="px-6 py-4">
-                    <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Ports Routes</span>
+                    <span class="inlinebg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Ports Routes</span>
                     <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Sea</span>
                     <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 cursor-pointer my-1 mx-1">Another Example</span>
 
@@ -100,9 +100,9 @@ ReactDOM.render(
                     </p>
                 </div>
                 <div class="px-6 py-4">
-                    <span class="inline-block bg-oviedoblue rounded-lg px-3 py-1 text-sm font-semibold text-white mr-2 cursor-pointer my-1 mx-1">Ports Routes</span>
-                    <span class="inline-block bg-oviedoblue rounded-lg px-3 py-1 text-sm font-semibold text-white mr-2 cursor-pointer my-1 mx-1">Sea</span>
-                    <span class="inline-block bg-oviedoblue rounded-lg px-3 py-1 text-sm font-semibold text-white cursor-pointer my-1 mx-1">Another Example</span>
+                    <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-white mr-2 cursor-pointer my-1 mx-1">Ports Routes</span>
+                    <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-white mr-2 cursor-pointer my-1 mx-1">Sea</span>
+                    <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-white cursor-pointer my-1 mx-1">Another Example</span>
 
                 </div>
             </div>
