@@ -2,7 +2,16 @@ import React, { Component } from 'react';
 import './styles/tailwind.css';
 import MetaTags from 'react-meta-tags';
 import port from './img/puerto.jpg';
-import { link } from 'react-router-dom';
+
+const MainPage=()=> {
+    return (
+        <div>
+            <h3>Welcome</h3>
+            <small>Main Page</small>
+            <link to="/religioso">Show</link>
+        </div>
+    )
+}
 
 function Menu() {
 
@@ -28,7 +37,7 @@ function Menu() {
   
   };
 
-class Index extends Component{ 
+class Religioso extends Component{ 
     render(){
     return(
     <div class="flex flex-col bg-gray-100 items-center font-sans font-light transition-all">
@@ -71,53 +80,9 @@ class Index extends Component{
                     </nav>
                 </div>
             </div>
-            <div id="religion" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
-                <img class="w-full" alt="Sunset in the mountains" src={port}></img>
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Religioso</div>
-                    <a href="/components/religioso.jsx"><p class="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                    </p></a>
-                </div>
-                <div class="px-6 py-4">
-                    <span class="inline bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Ports Routes</span>
-                    <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Sea</span>
-                    <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 cursor-pointer my-1 mx-1">Another Example</span>
-
-                </div>
-            </div>
-            <div id="civil" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
-                <img class="w-full" alt="Sunset in the mountains" src={port}></img>
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Guerra Civil</div>
-                    <p class="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                </div>
-                <div class="px-6 py-4">
-                    <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Ports Routes</span>
-                    <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Sea</span>
-                    <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 cursor-pointer my-1 mx-1">Another Example</span>
-
-                </div>
-            </div>
-            <div id="pre" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
-                <img class="w-full" alt="Sunset in the mountains" src={port}></img>
-                <div class="px-6 py-4">
-                    <div class="font-bold text-xl mb-2">Prerrománico</div>
-                    <p class="text-gray-700 text-base">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                    </p>
-                </div>
-                <div class="px-6 py-4">
-                    <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Ports Routes</span>
-                    <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Sea</span>
-                    <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 cursor-pointer my-1 mx-1">Another Example</span>
-
-                </div>
-            </div>
             <footer id="about" class="flex-center mb-4 mx-auto align-center"><p>Creado por: <a class="m-0 underline" target="_blank" href="https://jorgeorejas.com">Jorge Orejas</a></p></footer>
-    </div>)    }
+    </div>)
+    }
 }
 
-export default Index;
+export default Religioso;
