@@ -1,6 +1,5 @@
 /*App.js*/
 import React, { Component } from "react";
-//Import all needed Component for this tutorial
 import {
   BrowserRouter as Router,
   Route,
@@ -8,9 +7,6 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
-import MainPage from "./components/index";
-import Religioso from "./components/religioso";
-import NotFoundPage from "./components/404";
 import { functionTypeAnnotation } from "@babel/types";
 import './styles/tailwind.css';
 import MetaTags from 'react-meta-tags';
@@ -48,7 +44,7 @@ export default function App() {
           <div class="container mx-auto transition-all">
               <nav class="flex items-center justify-between flex-wrap transition-all">
                   <div class="flex items-center flex-no-shrink text-white mr-6 transition-all">
-                      <span class="font-semibold text-white text-xl tracking-tight transition-all">Historia de Oviedo</span>
+                      <a href="/"><span class="font-semibold text-white text-xl tracking-tight transition-all">Historia de Oviedo</span></a>
                   </div>
                   <div class="block sm:hidden transition-all">
                       <button class="navbar-burger flex items-center px-3 py-2 border rounded-lg text-white border-white hover:text-white hover:border-white transition-all">
@@ -57,33 +53,42 @@ export default function App() {
                   </div>
                   <div id="main-nav" class="w-full leading-none flex-grow sm:flex items-center sm:w-auto hidden transition-100 transition-all">
                       <div class="text-sm sm:flex-grow">
-                          <a href="#religion" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-white hover:text-grey-300 mr-4">
+                          <a href="/religioso" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-white hover:text-grey-300 mr-4">
                              Religioso
                           </a>
-                          <a href="#civil" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-white hover:text-grey-300 mr-4">
+                          <a href="/guerra" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-white hover:text-grey-300 mr-4">
                              Guerra Civil
                           </a>
-                          <a href="#pre" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-white hover:text-grey-300 mr-4">
+                          <a href="/prerromanico" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-white hover:text-grey-300 mr-4">
                              Prerrománico
-                          </a>
-                          <a href="#about" class="no-underline block mt-4 sm:inline-block sm:mt-0 text-white hover:text-grey-300 mr-4">
-                             About
                           </a>
                       </div>
                   </div>
               </nav>
           </div>
+          <div className="wrapper">
+            <MetaTags>
+              <title>Historia de Oviedo</title>
+              <meta name="description" content="Some description." />
+              <meta property="og:title" content="MyApp" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+              <meta property="og:image" content="path/to/image.jpg" />
+            </MetaTags>
+          </div>
       </div>
       
         <Switch>
-          <Route path="/about">
-            <About />
+          <Route path="/religioso">
+            <Religioso />
           </Route>
-          <Route path="/users">
-            <Users />
+          <Route path="/guerra">
+            <Guerra />
+          </Route>
+          <Route path="/prerromanico">
+            <Prerromanico />
           </Route>
           <Route path="/">
-            <Home />
+            <Home/>
           </Route>
         </Switch>
       </div>
@@ -92,31 +97,22 @@ export default function App() {
 }
 function Home(){
   return <div class="flex flex-col bg-gray-100 items-center font-sans font-light transition-all">
-  <div className="wrapper">
-    <MetaTags>
-      <title>Historia de Oviedo</title>
-      <meta name="description" content="Some description." />
-      <meta property="og:title" content="MyApp" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-      <meta property="og:image" content="path/to/image.jpg" />
-    </MetaTags>
-  </div>
-      <div id="religion" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
+      <a id="religion" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl" href="/religioso">
           <img class="w-full" alt="Sunset in the mountains" src={port}></img>
           <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">Religioso</div>
-              <a href="/components/religioso.jsx"><p class="text-gray-700 text-base">
+              <p class="text-gray-700 text-base">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-              </p></a>
+              </p>
           </div>
           <div class="px-6 py-4">
-              <span class="inline bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Ports Routes</span>
+              <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Ports Routes</span>
               <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Sea</span>
               <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 cursor-pointer my-1 mx-1">Another Example</span>
 
           </div>
-      </div>
-      <div id="civil" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
+      </a>
+      <a id="civil" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl" href="/guerra">
           <img class="w-full" alt="Sunset in the mountains" src={port}></img>
           <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">Guerra Civil</div>
@@ -130,8 +126,8 @@ function Home(){
               <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 cursor-pointer my-1 mx-1">Another Example</span>
 
           </div>
-      </div>
-      <div id="pre" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
+      </a>
+      <a id="pre" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl" href="/prerromanico">
           <img class="w-full" alt="Sunset in the mountains" src={port}></img>
           <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">Prerrománico</div>
@@ -145,15 +141,71 @@ function Home(){
               <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 cursor-pointer my-1 mx-1">Another Example</span>
 
           </div>
-      </div>
+      </a>
       <footer id="about" class="flex-center mb-4 mx-auto align-center"><p>Creado por: <a class="m-0 underline" target="_blank" href="https://jorgeorejas.com">Jorge Orejas</a></p></footer>
 </div>;
 }
 
-function About(){
-  return <h2>About</h2>
+function Religioso(){
+  return <div>
+    <h1 class="text-center text-black text-2xl">Religoso</h1>
+    <div id="pre" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
+      <img class="w-full" alt="Sunset in the mountains" src={port}></img>
+      <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Religoso</div>
+          <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
+      </div>
+      <div class="px-6 py-4">
+          <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Ports Routes</span>
+          <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Sea</span>
+          <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 cursor-pointer my-1 mx-1">Another Example</span>
+
+      </div>
+    </div>
+</div>
+
 }
 
-function Users(){
-  return <h2>Users</h2>
+function Guerra(){
+  return <div>
+  <h1 class="text-center text-black text-2xl">Religoso</h1>
+  <div id="pre" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
+    <img class="w-full" alt="Sunset in the mountains" src={port}></img>
+    <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">Guerra Civil</div>
+        <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+        </p>
+    </div>
+    <div class="px-6 py-4">
+        <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Ports Routes</span>
+        <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Sea</span>
+        <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 cursor-pointer my-1 mx-1">Another Example</span>
+
+    </div>
+  </div>
+</div>
+}
+
+function Prerromanico(){
+  return <div>
+  <h1 class="text-center text-black text-2xl">Prerrománico</h1>
+  <div id="pre" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
+    <img class="w-full" alt="Sunset in the mountains" src={port}></img>
+    <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">Prerrománico</div>
+        <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+        </p>
+    </div>
+    <div class="px-6 py-4">
+        <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Ports Routes</span>
+        <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 mr-2 cursor-pointer my-1 mx-1">Sea</span>
+        <span class="inline-block bg-gray-200 rounded-lg px-3 py-1 text-sm font-semibold text-gray-700 cursor-pointer my-1 mx-1">Another Example</span>
+
+    </div>
+  </div>
+</div>
 }

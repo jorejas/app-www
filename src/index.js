@@ -1,17 +1,8 @@
+/*Index.js*/
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import MainPage from "./components/index";
-import Religioso from "./components/religioso";
-import NotFoundPage from "./components/404";
-import {
-    BrowserRouter as Router,
-    Route,
-    Switch,
-    Link,
-    Redirect
-  } from "react-router-dom";
 
 ReactDOM.render(
     <App/>
