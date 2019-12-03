@@ -39,6 +39,15 @@ document.addEventListener('DOMContentLoaded', function () {
 export default function App() {
   return(
     <Router>
+      <div className="wrapper">
+            <MetaTags>
+              <title>Historia de Oviedo </title>
+              <meta name="description" content="Some description." />
+              <meta property="og:title" content="MyApp" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+              <meta property="og:image" content="path/to/image.jpg" />
+            </MetaTags>
+          </div>
       <div class="flex flex-col bg-gray-100 items-center font-sans font-light transition-all">
       <div class="border-b bg-oviedoblue w-11/12 my-4 py-6 px-6 rounded-lg px-2 transition-all">
           <div class="container mx-auto transition-all">
@@ -66,15 +75,7 @@ export default function App() {
                   </div>
               </nav>
           </div>
-          <div className="wrapper">
-            <MetaTags>
-              <title>Historia de Oviedo</title>
-              <meta name="description" content="Some description." />
-              <meta property="og:title" content="MyApp" />
-              <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-              <meta property="og:image" content="path/to/image.jpg" />
-            </MetaTags>
-          </div>
+          
       </div>
       
         <Switch>
@@ -96,8 +97,8 @@ export default function App() {
   );
 }
 function Home(){
-  return <div class="flex flex-col bg-gray-100 items-center font-sans font-light transition-all">
-      <a id="religion" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl" href="/religioso">
+  return <div class="flex flex-col bg-gray-100 items-center font-sans font-light transition-all w-11/12">
+      <a id="religion" class="w-full rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl" href="/religioso">
           <img class="w-full" alt="Sunset in the mountains" src={port}></img>
           <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">Religioso</div>
@@ -112,7 +113,7 @@ function Home(){
 
           </div>
       </a>
-      <a id="civil" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl" href="/guerra">
+      <a id="civil" class="w-full rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl" href="/guerra">
           <img class="w-full" alt="Sunset in the mountains" src={port}></img>
           <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">Guerra Civil</div>
@@ -127,7 +128,7 @@ function Home(){
 
           </div>
       </a>
-      <a id="pre" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl" href="/prerromanico">
+      <a id="pre" class="w-full rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl" href="/prerromanico">
           <img class="w-full" alt="Sunset in the mountains" src={port}></img>
           <div class="px-6 py-4">
               <div class="font-bold text-xl mb-2">Prerrománico</div>
@@ -147,9 +148,9 @@ function Home(){
 }
 
 function Religioso(){
-  return <div>
+  return <div class="flex flex-col bg-gray-100 items-center font-sans font-light transition-all w-11/12">
     <h1 class="text-center text-black text-2xl">Religoso</h1>
-    <div id="pre" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
+    <div id="pre" class="w-full rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
       <img class="w-full" alt="Sunset in the mountains" src={port}></img>
       <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2">Religoso</div>
@@ -169,9 +170,9 @@ function Religioso(){
 }
 
 function Guerra(){
-  return <div>
-  <h1 class="text-center text-black text-2xl">Religoso</h1>
-  <div id="pre" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
+  return <div class="flex flex-col bg-gray-100 items-center font-sans font-light transition-all w-11/12">
+  <h1 class="text-center text-black text-2xl">Guerra Civil</h1>
+  <div id="pre" class="w-full rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
     <img class="w-full" alt="Sunset in the mountains" src={port}></img>
     <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">Guerra Civil</div>
@@ -190,9 +191,9 @@ function Guerra(){
 }
 
 function Prerromanico(){
-  return <div>
+  return <div class="flex flex-col bg-gray-100 items-center font-sans font-light transition-all w-11/12">
   <h1 class="text-center text-black text-2xl">Prerrománico</h1>
-  <div id="pre" class="w-11/12 rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
+  <div id="pre" class="w-full rounded-lg bg-white my-4 overflow-hidden shadow mx-auto hover:shadow-xl">
     <img class="w-full" alt="Sunset in the mountains" src={port}></img>
     <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">Prerrománico</div>
