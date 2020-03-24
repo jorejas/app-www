@@ -1,6 +1,5 @@
 import Menu from './components/Menu';
 import Page from './pages/Index';
-import Tours from './pages/Tours'
 import React, { useState } from 'react';
 import { IonApp, IonRouterOutlet, IonSplitPane } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
