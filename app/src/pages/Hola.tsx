@@ -53,15 +53,6 @@ const Hola: React.FC = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit facere, modi veniam obcaecati deleniti illo repellat cumque rem delectus vel, maxime, sint minima nemo expedita. Cumque dolorem vel porro aliquid.
           </IonCardContent>
         </IonCard>
-        <IonCard color="light">
-          <IonCardHeader>
-            <IonCardTitle>Lorem Ipsum</IonCardTitle>
-            <IonCardSubtitle>Lorem</IonCardSubtitle>
-          </IonCardHeader>
-          <IonCardContent>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit facere, modi veniam obcaecati deleniti illo repellat cumque rem delectus vel, maxime, sint minima nemo expedita. Cumque dolorem vel porro aliquid.
-          </IonCardContent>
-        </IonCard>
         <IonToast
           isOpen={showToast1}
           onDidDismiss={()=> setShowToast1(false)}
