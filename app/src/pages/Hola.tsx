@@ -1,6 +1,5 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, IonImg, IonBackButton, IonButtons, IonText, IonToast, IonButton } from '@ionic/react';
 import React, { useState } from 'react';
-import ExploreContainer from '../components/ExploreContainer';
 import './Hola.css';
 
 const Hola: React.FC = () => {
@@ -20,6 +19,7 @@ const Hola: React.FC = () => {
         <IonCard>
           <IonCardHeader>
             <IonCardTitle>WHAT AN AMAZING APP</IonCardTitle>
+            <IonCardSubtitle>But it still is work in progress...</IonCardSubtitle>
           </IonCardHeader>
           <IonCardContent>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit facere, modi veniam obcaecati deleniti illo repellat cumque rem delectus vel, maxime, sint minima nemo expedita. Cumque dolorem vel porro aliquid.
