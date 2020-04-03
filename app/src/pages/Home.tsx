@@ -12,7 +12,7 @@ const Home: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <IonCard button={true} href="/hola">
+        <IonCard button={true} href="/hola" color="light">
             <IonImg src="https://www.jorgeorejas.com/src/img/card-top/Historiapp.jpeg" alt="img"/>
             <IonCardHeader>
               <IonCardTitle>Hola</IonCardTitle>
@@ -22,7 +22,7 @@ const Home: React.FC = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quam quod modi laudantium quibusdam autem nesciunt ipsa repudiandae reiciendis voluptas hic quo, perferendis eligendi fuga et nostrum officiis sit. Aut.
             </IonCardContent>
           </IonCard>
-          <IonCard button={true}>
+          <IonCard button={true} color="light">
             <IonImg src="https://www.jorgeorejas.com/src/img/card-top/MIRDIY.jpg" alt="img"/>
             <IonCardHeader>
               <IonCardTitle>Hola</IonCardTitle>
@@ -32,7 +32,7 @@ const Home: React.FC = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quam quod modi laudantium quibusdam autem nesciunt ipsa repudiandae reiciendis voluptas hic quo, perferendis eligendi fuga et nostrum officiis sit. Aut.
             </IonCardContent>
           </IonCard>
-          <IonCard button={true}>
+          <IonCard button={true} color="light">
             <IonImg src="https://www.jorgeorejas.com/src/img/card-top/LGLed.png" alt="img"/>
             <IonCardHeader>
               <IonCardTitle>Hola</IonCardTitle>
