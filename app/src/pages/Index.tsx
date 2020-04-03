@@ -24,7 +24,7 @@ const Page: React.FC<RouteComponentProps<{ name: string; }>> = ({ match }) => {
         </IonHeader>
         <IonCard>
           <IonCardHeader>
-            <img src="https://www.jorgeorejas.com/src/img/card-top/Historiapp.jpeg" alt="photo"/>
+            <img src="https://www.jorgeorejas.com/src/img/card-top/Historiapp.jpeg" alt="foto"/>
             <IonCardTitle>
               Hola
             </IonCardTitle>
