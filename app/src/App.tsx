@@ -1,9 +1,11 @@
-import Menu from './components/Menu';
-import Page from './pages/Index';
-import React, { useState } from 'react';
-import { IonApp, IonRouterOutlet, IonSplitPane } from '@ionic/react';
-import { IonReactRouter } from '@ionic/react-router';
+import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
+import { IonApp, IonRouterOutlet, IonButton } from '@ionic/react';
+import { IonReactRouter } from '@ionic/react-router';
+
+/* Paginas */
+import Home from './pages/Home';
+import Hola from './pages/Hola';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -24,26 +26,37 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
-const App: React.FC = () => {
+/* Slides */
 
-  const [selectedPage, setSelectedPage] = useState('');
+import { IonSlides, IonSlide, IonContent } from '@ionic/react';
 
-  return (
-    <IonApp>
-      <IonReactRouter>
-        <IonSplitPane contentId="main">
-          <Menu selectedPage={selectedPage} />
-          <IonRouterOutlet id="main">
-            <Route path="/page/:name" render={(props) => {
-              setSelectedPage(props.match.params.name);
-              return <Page {...props} />;
-            }} exact={true} />
-            <Route path="/" render={() => <Redirect to="/page/Index" />} exact={true} />
-          </IonRouterOutlet>
-        </IonSplitPane>
-      </IonReactRouter>
-    </IonApp>
-  );
+// Parameters
+
+const slideOpts = {
+  effect: "fade",
+  autoHeight: true,
+  initialSlide: 0,
+  speed: 400,
+  autoplay: {
+    delay: 2500,
+    stopOnLastSlide: false,
+  },
+  scrollbar:{
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
 };
+
+const App: React.FC = () => (
+  <IonApp>
+    <IonReactRouter>
+      <IonRouterOutlet>
+        <Route path="/home" component={Home} exact={true}/>
+        <Route exact path="/" render={() => <Redirect to="/home" />} />
+        <Route path="/hola" component={Hola} exact={true}/>
+      </IonRouterOutlet>
+    </IonReactRouter>
+  </IonApp>
+);
 
 export default App;

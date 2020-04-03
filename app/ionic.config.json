@@ -1,8 +1,7 @@
 {
-  "name": "app",
+  "name": "Historia",
   "integrations": {
     "capacitor": {}
   },
-  "type": "react",
-  "id": "d34d73f0"
+  "type": "react"
 }
