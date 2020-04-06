@@ -1,7 +1,9 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardTitle, IonCardSubtitle, IonCardContent, IonImg } from '@ionic/react';
 import React from 'react';
-import ExploreContainer from '../components/ExploreContainer';
-import './Hola.css';
+import './Home.css';
+import mosaico from './Places/Catedral/img/mosaico.jpg';
+import mandala from './Places/Catedral/img/mandala.jpg';
+import vistas from './Places/Catedral/img/vistas.jpg';
 
 const Home: React.FC = () => {
   return (
@@ -13,7 +15,7 @@ const Home: React.FC = () => {
       </IonHeader>
       <IonContent>
         <IonCard button={true} href="/hola" color="light">
-            <IonImg src="https://www.jorgeorejas.com/src/img/card-top/Historiapp.jpeg" alt="img"/>
+            <IonImg src={mosaico} alt="img"/>
             <IonCardHeader>
               <IonCardTitle>Hola</IonCardTitle>
               <IonCardSubtitle>Esto es una prueba</IonCardSubtitle>
@@ -23,7 +25,7 @@ const Home: React.FC = () => {
             </IonCardContent>
           </IonCard>
           <IonCard button={true} color="light">
-            <IonImg src="https://www.jorgeorejas.com/src/img/card-top/MIRDIY.jpg" alt="img"/>
+            <IonImg src={vistas} alt="img"/>
             <IonCardHeader>
               <IonCardTitle>Hola</IonCardTitle>
               <IonCardSubtitle>Esto es una prueba</IonCardSubtitle>
@@ -33,7 +35,7 @@ const Home: React.FC = () => {
             </IonCardContent>
           </IonCard>
           <IonCard button={true} color="light">
-            <IonImg src="https://www.jorgeorejas.com/src/img/card-top/LGLed.png" alt="img"/>
+            <IonImg src={mandala} alt="img"/>
             <IonCardHeader>
               <IonCardTitle>Hola</IonCardTitle>
               <IonCardSubtitle>Esto es una prueba</IonCardSubtitle>

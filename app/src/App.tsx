@@ -1,11 +1,11 @@
 import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, IonButton, IonPage } from '@ionic/react';
+import { IonApp, IonRouterOutlet, IonPage } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 
 /* Paginas */
 import Home from './pages/Home';
-import Hola from './pages/Hola';
+import Hola from './pages/Places';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
