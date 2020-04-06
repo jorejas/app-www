@@ -22,17 +22,8 @@ const Hola: React.FC = () => {
         <Rua/>
         <IonCard color="light">
           <IonCardHeader>
-            <IonCardTitle>Lorem Ipsum</IonCardTitle>
-            <IonCardSubtitle>Lorem</IonCardSubtitle>
-          </IonCardHeader>
-          <IonCardContent>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit facere, modi veniam obcaecati deleniti illo repellat cumque rem delectus vel, maxime, sint minima nemo expedita. Cumque dolorem vel porro aliquid.
-          </IonCardContent>
-        </IonCard>
-        <IonCard color="light">
-          <IonCardHeader>
-            <IonCardTitle>Lorem Ipsum</IonCardTitle>
-            <IonCardSubtitle>Lorem</IonCardSubtitle>
+            <IonCardTitle>More to come</IonCardTitle>
+            <IonCardSubtitle>In a future, after quarantine</IonCardSubtitle>
           </IonCardHeader>
           <IonCardContent>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit facere, modi veniam obcaecati deleniti illo repellat cumque rem delectus vel, maxime, sint minima nemo expedita. Cumque dolorem vel porro aliquid.
