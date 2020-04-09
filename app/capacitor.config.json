@@ -1,8 +1,8 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "app",
+  "appId": "com.historiadeoviedo.com",
+  "appName": "Historia de Oviedo",
   "bundledWebRuntime": false,
   "npmClient": "npm",
-  "webDir": "build",
+  "webDir": "www",
   "cordova": {}
 }
